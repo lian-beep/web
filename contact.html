@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Peter Kamau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            <img src="name.jpg" alt="L'avance Technique Patrick"></a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="Xp.html">Experience</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="page-hero">
+                <span class="intro">GET IN TOUCH</span>
+                <h1>Let's <span>Work</span> Together.</h1>
+                <p>
+                    Have a project, website idea, or opportunity?
+                    I would love to hear from you. Send me a message
+                    and let's create something amazing together.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>
+                            <small>EMAIL</small>
+                            <strong>peterkamaustd1@gmail.com</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <small>LOCATION</small>
+                            <strong>Kenya</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <small>STATUS</small>
+                            <strong>Available for Projects</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <p>Fill in the form below and tell me about your project.</p>
+
+                       <form
+                        id="contactForm"
+                        action="https://formspree.io/f/xvkkqzry"
+                        method="POST"
+                    >
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is your project about?"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary submit-btn"
+                        >
+                            Send Message →
+                        </button>
+
+                        <p id="formMessage"></p>
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="mailto:peterkamaustd1@gmail.com">Email</a>
+        </div>
+        <p>© <span id="year"></span> <span>Peter Kamau</span>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
